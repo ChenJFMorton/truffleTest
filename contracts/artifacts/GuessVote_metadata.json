@@ -1,0 +1,237 @@
+{
+	"compiler": {
+		"version": "0.8.4+commit.c7e474f2"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "generateVoteResult",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "queryLatestPeriodState",
+				"outputs": [
+					{
+						"internalType": "enum GuessVote.States",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "queryVoteListByAddress",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "_account",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "_periodNum",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "_amount",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "_vote",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "_result",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "_winAmount",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct GuessVote.Voter[]",
+						"name": "voters",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "_periodNum",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "_amount",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "_voteResult",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bool",
+								"name": "_isHandled",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct GuessVote.PeriodVoteResult",
+						"name": "periodVoteResult",
+						"type": "tuple"
+					}
+				],
+				"name": "sendAwards",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "vote",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "voteGuess",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "_account",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "_periodNum",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "_amount",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "_vote",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "_result",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "_winAmount",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct GuessVote.Voter[]",
+						"name": "voters",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"generateVoteResult()": {
+					"notice": "生成竞猜结果（大或者小）"
+				},
+				"queryLatestPeriodState()": {
+					"notice": "查询最新期投注状态（投注中、已截止）"
+				},
+				"queryVoteListByAddress()": {
+					"notice": "查询账号投注记录"
+				},
+				"sendAwards((uint256,uint256,uint256,bool))": {
+					"notice": "派奖"
+				},
+				"voteGuess(uint256,uint256)": {
+					"notice": "投注"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"truffleTest/contracts/GuessVote.sol": "GuessVote"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+			"keccak256": "0x027b891937d20ccf213fdb9c31531574256de774bda99d3a70ecef6e1913ed2a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://087318b21c528119f649899f5b5580566dd8d7b0303d4904bd0e8580c3545f14",
+				"dweb:/ipfs/Qmbn5Mj7aUn8hJuQ8VrQjjEXRsXyJKykgnjR9p4C3nfLtL"
+			]
+		},
+		"truffleTest/contracts/GuessVote.sol": {
+			"keccak256": "0x04bbd93ee4fc36c25d0f78a997e67585bd2087dd69c96c417875f2e7a1c30e69",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d47e2e12083abf046bcfba93788f4a4bebfe401466208e24c4151643b3b96783",
+				"dweb:/ipfs/QmRk63y4MF8mhSJvM8Kd1xNUyXdx7Quz3FZ9cGq8fiFzhb"
+			]
+		}
+	},
+	"version": 1
+}

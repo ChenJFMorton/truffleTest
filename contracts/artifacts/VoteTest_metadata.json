@@ -1,0 +1,97 @@
+{
+	"compiler": {
+		"version": "0.8.4+commit.c7e474f2"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "generateVoteResult",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getMap",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "_periodNum",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "_amount",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "_voteResult",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bool",
+								"name": "_isHandled",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct VoteTest.PeriodVoteResult[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"generateVoteResult()": {
+					"notice": "生成竞猜结果（大或者小）"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"truffleTest/contracts/VoteTest.sol": "VoteTest"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"truffleTest/contracts/VoteTest.sol": {
+			"keccak256": "0xf7789adf3a84bc93acf8b251285aefffb23f851f21dc90e110f8aecd5ddbe381",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f81155e1d94047e644324d56b3ca3eef7fc17904b9b8f035d7a840ad00002a77",
+				"dweb:/ipfs/QmaUtGHeoVt7NeXicXfLE9eU38MWShzKLhx19k4VzFxGKx"
+			]
+		}
+	},
+	"version": 1
+}

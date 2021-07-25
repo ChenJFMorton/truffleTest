@@ -1,0 +1,63 @@
+{
+	"compiler": {
+		"version": "0.8.4+commit.c7e474f2"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_a",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_b",
+						"type": "uint256"
+					}
+				],
+				"name": "taker",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Guess.sol": "Guess"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Guess.sol": {
+			"keccak256": "0x9532d5f2620af7952552a48abb88fdc792d83d201d07978fbd954de1c9709e69",
+			"urls": [
+				"bzz-raw://1925ab48a5c7dd7d49fa748a2ded6e96ddfaf22dc6cdb6c99d965c93e9de96c5",
+				"dweb:/ipfs/QmVrSbfjM7aWDxsHJcpkkdLNe6bdP5EVjmLPXE4nbZCK17"
+			]
+		}
+	},
+	"version": 1
+}

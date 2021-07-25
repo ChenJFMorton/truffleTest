@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://unpkg.com/@metamask/detect-provider/dist/detect-provider.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<script type="text/javascript">
+    const { ethereum } = window
+    // 定义点击事件
+    const onClickConnect = async () => {
+        try {
+            const newAccounts = await ethereum.request({
+                method: 'eth_requestAccounts',
+            })
+            handleNewAccounts(newAccounts)
+        } catch (error) {
+            console.error(error)
+        }
+    }
+
+    let accounts
+    const isMetaMaskConnected = () => accounts && accounts.length > 0
+
+    // const onboardButton = document.getElementById('connectButton')
+    function handleNewAccounts(newAccounts) {
+        accounts = newAccounts
+        // accountsDiv.innerHTML = accounts
+        if (isMetaMaskConnected()) {
+            // initializeAccountButtons()
+        }
+        // updateButtons()
+    }
+
+</script>
+
+<body>
+    <div><button type="submit" id="connectButton" onclick="onClickConnect()">Enable Ethereum</button></div>
+</body>
+
+</html>
